@@ -1,0 +1,22 @@
+<h1>Cursos</h1>
+<hr>
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col">ID</th>
+          <th scope="col">NOMBRE</th>
+          <th scope="col">CERTIFICADO</th>
+          <th scope="col">DIFICULTAD</th>
+          <th scope="col">REQUERIMIENTO</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let curso of cursos">
+          <th scope="row">{{curso.id}}</th>
+          <td> {{curso.nombre}} </td>
+          <td>{{curso.certificado}}</td>
+          <td>{{curso.dificultad}}</td>
+          <td>{{curso.requerimiento}}</td>
+      </tr>
+  </tbody>
+</table>
